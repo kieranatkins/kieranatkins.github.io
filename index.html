@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Kieran Atkins</title>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" >
+</head>
+
+<body>
+
+
+  <div class="navbar">
+    <div class="navbar-text">
+    
+      <a class="navbar-title" href="#top">Dr. Kieran Atkins</a>
+      
+      <div class="navbar-links">
+        <a href="#bio">About Me</a>
+        <a href="#publications">Publications</a>
+        <a href="#articles">Articles</a>
+      </div>
+
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="hamburger-icon" onclick="myFunction()">
+        <div ></div>
+        <div ></div>
+        <div ></div>
+      </a>
+      
+    </div>
+    
+    <hr>
+
+    <div id="navbar-links">
+      <a href="#bio" onclick="myFunction()">About Me</a>
+      <a href="#publications" onclick="myFunction()">Publications</a>
+      <a href="#articles" onclick="myFunction()">Articles</a>
+    </div>
+    <hr id="line-hamburger-menu">
+  </div>
+
+
+  <main>
+    <div class="container" id="header-background">
+      <header>
+        <img src="images/staff_photo.jpg" alt="Profile Picture" class="profile-image">
+        
+        <div class="header-text">
+          <h1>Dr. Kieran Atkins</h1>
+          <p>Computer Vision and Deep Learning Researcher</p>
+
+          <hr>
+          
+          <address>
+            <p>Work email: <a href="mailto:kia10@aber.ac.uk">kia10@aber.ac.uk</a></p>
+            <p>Personal email: <a href="mailto:kieran.atkins99@gmail.com">kieran.atkins99@gmail.com</a></p>
+
+            <div class="container">
+            <a href="https://uk.linkedin.com/in/kieran-atkins-b05173188" target="_blank"><img src="images/InBug-White.png" width="40px"></a>
+
+            <a href="https://github.com/kieranatkins" target="_blank"><img src="images/GitHub_Invertocat_White.svg" width="40px"></a>
+            </div>
+          </address>
+        </div>
+
+      </header>
+    </div>
+  
+    <section id="bio">
+      <h2>About Me</h2>
+      <p>Computer vision and deep learning researcher specialising in AI-driven plant phenotyping and translating large-scale data into actionable insights. Experienced in architecting and delivering end-to-end deep learning pipelines, supported by strong critical analysis and problem-solving skills. Seeking to apply expertise in AI-driven image analysis and cross-disciplinary collaboration to address complex challenges in biological data science.</p>
+    </section>
+
+
+    <section id="publications">
+      <h2>Publications</h2>
+
+      <h3 class="publication-title"><a href="https://doi.org/10.1093/gigascience/giae123" target="_blank">Unlocking the power of AI for phenotyping fruit morphology in Arabidopsis</a></h3>
+      <p class="publication-authors"><strong>Kieran Atkins</strong>, Gina A Garzón-Martínez, Andrew Lloyd, John H Doonan, Chuan Lu</p>
+      <p class="publication-journal"><em>GigaScience</em>, Volume 14, 2025, giae123 </p>
+
+      <a class="collapsible"> Abstract</a>
+      <div class="abstract">
+        <p  id="abstract1">Deep learning can revolutionise high-throughput image-based phenotyping by automating the measurement of complex traits, a task that is often labour-intensive, time-consuming, and prone to human error. However, its precision and adaptability in accurately phenotyping organ-level traits, such as fruit morphology, remain to be fully evaluated. Establishing the links between phenotypic and genotypic variation is essential for uncovering the genetic basis of traits and can also provide an orthologous test of pipeline effectiveness. In this study, we assess the efficacy of deep learning for measuring variation in fruit morphology in Arabidopsis using images from a multiparent advanced generation intercross (MAGIC) mapping family. We trained an instance segmentation model and developed a pipeline to phenotype Arabidopsis fruit morphology, based on the model outputs. Our model achieved strong performance with an average precision of 88.0% for detection and 55.9% for segmentation. Quantitative trait locus analysis of the derived phenotypic metrics of the MAGIC population identified significant loci associated with fruit morphology. This analysis, based on automated phenotyping of 332,194 individual fruits, underscores the capability of deep learning as a robust tool for phenotyping large populations. Our pipeline for quantifying pod morphological traits is scalable and provides high-quality phenotype data, facilitating genetic analysis and gene discovery, as well as advancing crop breeding research.</p>
+      </div>
+
+      <h3 class="publication-title"><a href="https://doi.org/10.1016/j.compag.2025.110470" target="_blank">DeepCanola: Phenotyping brassica pods using semi-synthetic data and active learning</a></h3>
+      <p class="publication-authors">Larissa J.J. van Vliet*, <strong>Kieran Atkins*</strong>, Smita Kurup, Laura Siles, Jo Hepworth, Fiona M.K. Corke, John H. Doonan, Chuan Lu (*equal contribution)</p>
+      <p class="publication-journal"><em>Computers and Electronics in Agriculture</em>, Volume 220, 2025, 110470</p>
+
+      <a class="collapsible"> Abstract</a>
+      <div class="abstract">
+        <p id="abstract2">Phenotyping, the measurement of attributes or traits, is crucial in selecting superior cultivars for specific environmental situations. This is a time-consuming process when applied to large populations but can be accelerated through the use of deep learning, resulting in an algorithm that can phenotype images of specimens in negligible amounts of time. The primary issue with deep learning is the large quantities of high-quality training data required to make a viable phenotyping pipeline. To address this, we present a semi-synthetic training data generation system which significantly reduces the amount of human effort spent on data collection. We use active learning alongside this system to create DeepCanola, an instance segmentation model that successfully segments and measures the valves from Brassica napus pods. We demonstrate that the model accurately estimates the effect of different winter cold treatments on a range of different cultivars and crop types as effectively as manually curated measurements. Furthermore, the resulting model is effective on data from various experimental settings and on different, but related, species such as Arabidopsis thaliana, Allaria petiolate (garlic mustard) and Raphanus raphanistrum subsp. sativus (radish). This robust tool could be easily scaled, thereby accelerating breeding or fundamental research programs. Code and model weights: <a href="https://github.com/kieranatkins/deepcanola" target="_blank">https://github.com/kieranatkins/deepcanola</a>.</p>
+      </div>
+    
+
+      <h3 class="publication-title"><a href="https://doi.org/10.83164/94725637" target="_blank">Quantitative Phenotyping using Deep Learning</a></h3>
+      <p class="publication-authors"><strong>Kieran Atkins</strong></p>
+      <p class="publication-journal"><em>Doctoral thesis</em>, 2025</p>
+
+      <a class="collapsible"> Abstract</a>
+      <div class="abstract">
+        <p id="abstract3">Phenotyping, the process of measuring characteristics (often referred to as traits), is a cornerstone of modern crop breeding. The automation of phenotyping (known as phenomics) is crucial for accelerating research in the face of climate change and increased pest biodiversity. In image-based phenomics, classical computer vision (CV) and deep learning (DL) have been used successfully for image-level and enumerative traits. However, the automated collection of accurate quantitative trait data at the organ level has not yet been fully explored. Typically, classical CV algorithms often lack the robustness and consistency needed to capture complex traits in variable domains. Deep learning, however, can be limited by the cost of the training data necessary to build a robust model. Concerns also remain about DL accuracy when applied to genetic research. This thesis reports the training of novel DL models, the design of phenotyping pipelines to extract quantitative trait measurements via both traditional and generated training data; relating variation in the traits to variation in the genome, and the creation of a novel weakly supervised training system that pretrains networks to recognise plant morphology. Firstly, synthetic training data was used as part of an active learning system to successfully train a phenotyping model for isolated Brassica pods, starting from a small initial dataset. Secondly, a DL model and pipeline were developed to extract organ-level traits from images of entire Arabidopsis fruiting stems from a multi-parent advanced generation inter-cross (MAGIC) population and successfully relate the variability of these metrics to variability in the genome using QTL analysis. Finally, a novel pre-training system was designed that utilises weakly supervised training to recognise plant structure morphology, guided by classical computer vision pipeline. This system was demonstrated on a new collection of images of both crop and non-crop relatives to pre-train a base model for general plant organ detection, followed by fine-tuning with minimal training data for downstream measurements. This thesis contributes to the development and verification of AI pipelines, paving the way for more efficient (pre-)training systems in image-based plant phenotyping. These advancements offer the potential to scale up phenotyping, accelerating genetic research and plant breeding programmes.</p>
+      </div>
+    </section>
+
+    <div class="container" id="articles-background">
+
+    <section id="articles">
+      <h2>Articles</h2>
+      <p>Read more about my work in the following articles:</p>
+
+  
+      <figure class="article-image">
+        <img title="Deep learning drives next generation of crop improvement" src="images/article-advances-wales.png" alt="Article in the issue 107 of Advances in Wales" ></img>
+        <figcaption><a target="_blank" href="https://businesswales.gov.wales/system/files/2025-12/251211_Advances_English_107%20Final_0.pdf/#page=15">Issue 107</a> (<a class="article-link" href="https://businesswales.gov.wales/topics-and-guidance/develop-innovative-ideas-organisations-products-or-services/advances-wales" target="_blank">Advances in Wales</a>)</figcaption>
+      </figure>
+
+      <figure class="article-image">
+        <iframe src="https://www.aber.ac.uk/en/news/archive/2025/08/title-282874-en.html" title="AI tool automates plant fruit measuring to breed better crops"></iframe>
+        <figcaption><a class="article-link" href="https://www.aber.ac.uk/en/news/archive/2025/08/title-282874-en.html" target="_blank">AI tool automates plant fruit measuring to breed better crops</a> (Watch the YouTube video: <a href="https://youtu.be/A5FaDxC_b0Y?si=mDC0fS6x1mrZu76F" target="_blank">here</a>)</figcaption>
+      </figure>
+  
+    </section>
+    </div>
+  
+  
+  </main>
+
+  <script src="JS.js"></script>
+
+
+</body>
+</html>
+
