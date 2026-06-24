@@ -41,7 +41,7 @@ a:hover {
 
 .navbar-text {
   width: 100%;
-  padding: 1em 0 0.5em 0 ;
+  padding: 1rem 0 0.5rem 0 ;
   justify-content: space-between;
   display: flex;
   max-width: 1500px;
@@ -52,7 +52,7 @@ a:hover {
   color: black;
   text-decoration: none;
   border: 2px solid transparent;
-  padding: 0.2em 0.2em;
+  padding: 0.2rem 0.2rem;
 }
 
 .navbar-links a:hover {
@@ -101,7 +101,7 @@ hr {
 #header-background{
   background-color: #333333;
   margin: 0;
-  margin-top: calc(41px + 2.9em);
+  margin-top: calc(41px + 2.9rem);
 }
 
 header {
@@ -125,7 +125,7 @@ img.profile-image {
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 2em;
   margin: 0;
   color: lavender;
   font-family: 'Courier New', Courier, monospace;
@@ -153,7 +153,7 @@ header hr {
     text-decoration: none;
     display: block;
     color: black;
-    margin: 0.5em 0 0.5em 2.5%;
+    margin: 0.5rem 0 0.5rem 2.5%;
   }
 
   /* Style the hamburger menu */
@@ -197,7 +197,7 @@ header hr {
 
   address {
     text-align: center;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.5rem;
   }
 
 }
@@ -221,19 +221,19 @@ section {
 
 .collapsible {
 	cursor: pointer;
-  margin-top: 0.5em;
+  margin-top: 0.5rem;
 }
 
 .collapsible::before{
   content: url(images/caret-down-fill.svg); 
-  width: 1em;
+  width: 1rem;
   vertical-align: bottom;
 
 }
 
 .collapsible.active::before{
   content: url(images/caret-up-fill.svg); 
-  width: 1em;
+  width: 1rem;
   vertical-align: bottom;
 }
 
@@ -249,11 +249,11 @@ section {
 
 /******* ARTICLES ********/
 .publication-title {
-  margin: 1em 0 0 0;
+  margin: 1rem 0 0 0;
 }
 
 .publication-authors {
-  margin: 0.2em 0;
+  margin: 0.2rem 0;
 }
 
 .publication-journal {
@@ -282,3 +282,14 @@ figure {
 }
 
 
+/************ FOOTER ************/
+
+footer {
+  width: 100%;
+  background-color: #333333;
+  color: lavender;
+  text-align: center;
+  margin: 0 auto;
+  padding: 1rem;
+  font-size: 0.8rem;
+}
