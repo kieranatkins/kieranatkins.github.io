@@ -39,7 +39,7 @@ a:hover {
   padding-bottom: 10px;
 }
 
-.navbar-text {
+.navbarText {
   width: 100%;
   padding: 1rem 0 0.5rem 0 ;
   justify-content: space-between;
@@ -48,22 +48,22 @@ a:hover {
   margin: 0 auto;
 }
 
-.navbar-links a {
+.navbarLinks a {
   color: black;
   text-decoration: none;
   border: 2px solid transparent;
   padding: 0.2rem 0.2rem;
 }
 
-.navbar-links a:hover {
+.navbarLinks a:hover {
   border: 2px solid black;
 }
 
-.navbar-title:hover {
+.navbarTitle:hover {
   text-decoration: none;
 }
 
-.navbar-title {
+.navbarTitle {
   font-weight: bold;
   margin: 0 0 0 2.5%;
   text-decoration: none;
@@ -71,19 +71,19 @@ a:hover {
   font-family: 'Courier New', Courier, monospace;
 }
 
-.navbar-links {
+.navbarLinks {
   margin: 0 2.5% 0 0;
 }
 
-.navbar .hamburger-icon {
+.navbar .hamburgerIcon {
   display: none;
 }
 
-.navbar #navbar-links {
+.navbar #navbarLinks {
   display: none;
 }
 
-#line-hamburger-menu {
+#lineHamburgerMenu {
   display: none;
 }
 
@@ -98,7 +98,7 @@ hr {
 
 /******* HEADER CONTENT ********/
 
-#header-background{
+#headerBackground{
   background-color: #333333;
   margin: 0;
   margin-top: calc(41px + 2.9rem);
@@ -112,13 +112,13 @@ header {
   display: flex;
 }
 
-img.profile-image {
+img.profileImage {
   margin: -30px 0 0 0;
   max-width: 300px;
   object-fit: contain;
 }
 
-.header-text {
+.headerText {
   vertical-align: top;
   margin: 20px auto 0 20px;
   width: auto;
@@ -138,18 +138,18 @@ header hr {
 @media (max-width: 700px) {
   
   /* Hide the links inside the navigation menu (except for logo/home) */
-  .navbar .navbar-links {
+  .navbar .navbarLinks {
     display: none;
   }
 
-  .navbar #navbar-links {
+  .navbar #navbarLinks {
     max-height: 0;
     display: block;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
   }
 
-  .navbar #navbar-links a{
+  .navbar #navbarLinks a{
     text-decoration: none;
     display: block;
     color: black;
@@ -157,7 +157,7 @@ header hr {
   }
 
   /* Style the hamburger menu */
-  .navbar .hamburger-icon {
+  .navbar .hamburgerIcon {
     display: block;
     position: absolute;
     right: 0;
@@ -165,14 +165,14 @@ header hr {
     margin: 1.25% 2.5% 0 0;
   }
 
-  .hamburger-icon div{
+  .hamburgerIcon div{
     width: 30px;
     height: 4px;
     background-color: black;
     margin: 6px auto;
   }
 
-  #line-hamburger-menu {
+  #lineHamburgerMenu {
     display: none;
     background-color: black;
     height: 2px;
@@ -189,7 +189,7 @@ header hr {
     align-items: center;
   }
 
-  .header-text {
+  .headerText {
     width: 100%;
     margin: 0;
     text-align: center;
@@ -248,15 +248,15 @@ section {
 
 
 /******* ARTICLES ********/
-.publication-title {
+.publicationTitle {
   margin: 1rem 0 0 0;
 }
 
-.publication-authors {
+.publicationAuthors {
   margin: 0.2rem 0;
 }
 
-.publication-journal {
+.publicationournal {
   margin: 0;
 }
 
@@ -266,20 +266,57 @@ figure {
   width: 100%;
 }
 
-.article-image iframe {
+.articleImage iframe {
   width: 100%;
   height: 50vh;
   border: none;
 }
 
-.article-image img {
+.articleImage img {
   height: 50vh;
   border: none;
 }
 
-.article-link {
+.articleLink {
   font-style: italic;
 }
+
+/************ CONTACT ME FORM ************/
+
+
+input, label, textarea{
+  display: block;
+  margin-bottom: 5px;  
+}
+
+textarea, input{
+  background-color: #333333;
+  color: white;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  padding: 10px;
+  border: 2px solid lavender;
+  width: calc(100% - 22px);
+}
+
+input:focus, textarea:focus{
+  border: 2px solid white;
+  outline: 2px solid black;
+}
+
+#submit {
+  padding: 10px;
+  background-color: #333333;
+  color: white;
+  border: 2px solid lavender;
+  border-radius: 5px;
+}
+
+#submit:hover {
+  background-color: black;
+  border: 2px solid white;
+}
+
 
 
 /************ FOOTER ************/

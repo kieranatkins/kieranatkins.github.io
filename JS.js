@@ -17,8 +17,8 @@ for (i = 0; i < coll.length; i++) {
 
 /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
 function myFunction() {
-  var x = document.getElementById("navbar-links");
-  var y = document.getElementById("line-hamburger-menu");
+  var x = document.getElementById("navbarLinks");
+  var y = document.getElementById("lineHamburgerMenu");
   if ( x.style.maxHeight){
        x.style.maxHeight = null;
        y.style.display = "none";
